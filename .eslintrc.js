@@ -1,1 +1,1 @@
-estlintrc.js
+eslintrc.js
