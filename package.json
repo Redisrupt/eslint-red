@@ -1,5 +1,5 @@
 {
-  "name": "eslint-red",
+  "name": "@redisrupt/eslint-red",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
