@@ -1,3 +1,9 @@
+const trimEnd = require('string.prototype.trimend');
+
+if (!String.prototype.trimEnd) {
+  trimEnd.shim();
+}
+
 module.exports = {
   parser: 'babel-eslint',
   settings: {
