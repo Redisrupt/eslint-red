@@ -22,6 +22,7 @@ module.exports = {
         useTabs: false,
         semi: true,
         jsxBracketSameLine: true,
+        arrowParens: 'avoid',
       },
     ],
     'arrow-parens': [2, 'as-needed'],
@@ -140,19 +141,8 @@ module.exports = {
     'react/sort-comp': 0,
     'react/wrap-multilines': 0,
     'react/jsx-indent-props': 0,
-    // PSA: React functional components considered harmful. 😈
-
-    // * Can’t make refs to them. Impossible for parent to know (at least on our current version of react)
-    // * Can’t have state. Annoying to refactor if you need to add it.
-    // * No lifecycle methods. Same issue with refactoring.
-    // * Can't be optimized for rendering by adding handler functions that are not inlined
-    //
-    // https://twitter.com/devongovett/status/1021465501984124928
-    // we can still enforce them in code review but I would encourage to remove them as errors
     'react/prefer-stateless-function': 0,
     'generator-star-spacing': 0,
-
-    // see CPM-2410
     'import/no-extraneous-dependencies': 0,
     'linebreak-style': 2,
     'import/imports-first': 0,
@@ -206,9 +196,6 @@ module.exports = {
     'no-multi-assign': 0,
     'no-useless-return': 0,
     'react/no-danger': 0,
-    // we should consider to enable this one to avoid cases
-    // where async keyword is used but no await is present
-    // in the body of the function
     'require-await': 0,
     'react/destructuring-assignment': 0,
     'import/order': 1,
