@@ -10,7 +10,7 @@
     "bump-major": "npm run pre-v && npm version major -m 'BLD: Release v%s' && npm run post-v",
     "bump-minor": "npm run pre-v && npm version minor -m 'BLD: Release v%s' && npm run post-v",
     "bump-patch": "npm run pre-v && npm version patch -m 'BLD: Release v%s' && npm run post-v",
-    "bump-prerelease:beta": "npm run pre-v && npm version prerelease -m 'BLD: Release v%s --preid=beta' && npm run post-v"
+    "bump-prerelease:beta": "npm run pre-v && npm version prerelease -m 'BLD: Release v%s' --preid=beta && npm run post-v"
   },
   "author": "reva",
   "license": "UNLICENSED",
